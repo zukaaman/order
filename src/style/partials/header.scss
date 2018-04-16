@@ -1,0 +1,128 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 30px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-wrapper {
+    flex-grow: 1;
+
+    .logo {
+      width: 159px;
+      height: 79px;
+    }
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+
+    li {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+
+    list-style: none;
+
+    a {
+      font-family: "MyriadPro", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: #ffffff;
+      font-family: "MyriadPro", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+
+      span {
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .how-to {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li:first-child {
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "";
+
+          display: block;
+          width: 11px;
+          height: 7px;
+          margin-left: 8px;
+
+          background-image: url("../img/arrow-down.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+        }
+      }
+    }
+
+    a {
+      font-family: "MyriadPro", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 15px 38px;
+
+      color: #ffffff;
+      font-family: "Myriad Pro";
+      font-size: 16px;
+      font-weight: 700;
+
+      box-shadow: 0 11px 16px rgba(14, 20, 32, 0.17);
+      border-radius: 15px;
+      background-color: #ffcc00;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+    }
+  }
+
+  .hamburger {
+    width: 18px;
+    height: 15px;
+  }
+}

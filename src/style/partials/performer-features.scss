@@ -1,0 +1,72 @@
+.performer-features {
+  position: relative;
+
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: calc(100% / 2 - 62px);
+
+    width: 176px;
+    height: 63px;
+
+    background-image: url("../img/performer-features-shape.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+
+    color: #2b303b;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 55px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    li {
+      margin-right: 3%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+    color: #2b303b;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 54.98px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: #696f7c;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 29.99px;
+  }
+}

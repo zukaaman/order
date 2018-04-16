@@ -1,0 +1,36 @@
+.order-middle {
+  padding: 100px 0;
+
+  background-color: #ecf1f4;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-order {
+    h2 {
+      margin: 0;
+      padding: 0;
+
+      color: #333333;
+      font-family: "Helvetica Neue Cyr", sans-serif;
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 72px;
+    }
+  }
+
+  .order-questions {
+    h2 {
+      margin: 0;
+      padding: 0;
+
+      color: #333333;
+      font-family: "Helvetica Neue Cyr", sans-serif;
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 72px;
+    }
+  }
+}

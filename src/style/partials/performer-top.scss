@@ -1,0 +1,60 @@
+.performer-top {
+  height: 891px;
+  padding-top: 300px;
+
+  background-color: #333333;
+  background-image: url("../img/performer-top-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+
+  box-sizing: border-box;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 35%;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+    font-family: "Helvetica Neue Cyr", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 72px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-left: 35%;
+    margin-bottom: 60px;
+
+    color: #ffffff;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .links-wrapper {
+    margin-left: 35%;
+  }
+
+  a {
+    padding: 20px 26px;
+    margin-right: 8px;
+
+    color: #ffffff;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-radius: 15px;
+    background-color: #ffcc00;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

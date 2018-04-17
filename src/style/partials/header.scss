@@ -45,7 +45,7 @@
     list-style: none;
 
     a {
-      font-family: "MyriadPro", sans-serif;
+      font-family: "MyriadPro-Bold", sans-serif;
       color: #ffffff;
       font-size: 16px;
       font-weight: 700;
@@ -57,13 +57,26 @@
       padding: 0;
 
       color: #ffffff;
-      font-family: "MyriadPro", sans-serif;
+      font-family: "MyriadPro-Bold", sans-serif;
       font-size: 16px;
       font-weight: 700;
 
-      span {
+      select {
         font-weight: 400;
         text-decoration: underline;
+        color: #ffffff;
+        font-family: "MyriadPro-Regular", sans-serif;
+
+        border: none;
+        background: inherit;
+
+        outline: none;
+        appearance: none;
+        cursor: pointer;
+      }
+
+      option {
+        color: #000000;
       }
     }
   }
@@ -99,7 +112,7 @@
     }
 
     a {
-      font-family: "MyriadPro", sans-serif;
+      font-family: "MyriadPro-Regular", sans-serif;
       color: #ffffff;
       font-size: 16px;
       font-weight: 400;
@@ -110,7 +123,7 @@
       padding: 15px 38px;
 
       color: #ffffff;
-      font-family: "Myriad Pro";
+      font-family: "MyriadPro-Bold";
       font-size: 16px;
       font-weight: 700;
 

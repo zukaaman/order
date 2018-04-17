@@ -1,0 +1,67 @@
+.index-middle {
+  padding: 90px 0 80px 0;
+
+  background-color: #ecf1f4;
+  background-image: url("../img/index-middle-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(100% / 2 + 487px) 0;
+  background-size: contain;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+
+    color: #2b303b;
+    font-family: "HelveticaNeueCyr-Light", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 55px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    max-width: 39%;
+    margin-bottom: 40px;
+
+    font-family: "HelveticaNeueCyr-Light", sans-serif;
+
+    font-weight: 300;
+    color: #696f7c;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  p:nth-of-type(2) {
+    margin-bottom: 40px;
+    color: #44484f;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  a {
+    padding: 15px 39px;
+
+    color: #ffffff;
+    font-family: "MyriadPro-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    &:nth-of-type(1) {
+      margin-right: 10px;
+
+      border-radius: 15px;
+      background-color: #ffcc00;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+    }
+
+    &:nth-of-type(2) {
+      border-radius: 15px;
+      background-color: #333333;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+    }
+  }
+}

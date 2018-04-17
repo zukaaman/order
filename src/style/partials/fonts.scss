@@ -28,14 +28,21 @@
 
 @font-face {
   font-family: "HelveticaNeueCyr-Light";
-  src: url("./fonts/HelveticaNeueCyr-Light.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
+  font-family: "HelveticaNeueCyr-Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "HelveticaNeueCyr-Black";
-  src: url("./fonts/HelveticaNeueCyr-Black.woff2") format("woff2"); /* Modern Browsers */
+  src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"); /* Modern Browsers */
   font-weight: 900;
   font-style: normal;
 }

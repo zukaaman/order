@@ -4,6 +4,10 @@
   padding-top: 110px;
   padding-bottom: 110px;
 
+  @include tablet {
+    padding: 60px 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -38,8 +42,17 @@
 
     list-style: none;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
     li {
       margin-right: 3%;
+
+      @include tablet {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
 
       &:last-child {
         margin-right: 0;

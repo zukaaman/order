@@ -39,7 +39,67 @@
   }
 
   .active {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 10%;
+    padding-top: 48px;
     display: block;
+    width: 100%;
+    margin-right: 10px;
+    height: 140px;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #333333;
+
+    box-sizing: border-box;
+
+    @include mobile {
+      padding-top: 15px;
+    }
+
+    .address {
+      display: none;
+    }
+
+    .how-to {
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 16px 30px;
+
+        color: #ffffff;
+        font-family: "MyriadPro-Bold";
+        font-size: 16px;
+        font-weight: 700;
+
+        box-shadow: 0 11px 16px rgba(14, 20, 32, 0.17);
+        border-radius: 15px;
+        background-color: #ffcc00;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+      }
+
+      li {
+        @include mobile {
+          margin-bottom: 30px;
+        }
+      }
+
+      li:nth-of-type(3) {
+
+        @include forHamMenu {
+          display: none;
+        }
+      }
+    }
   }
 
   .address {
@@ -127,7 +187,7 @@
     }
 
     button {
-      padding: 15px 38px;
+      padding: 15px 36px;
 
       color: #ffffff;
       font-family: "MyriadPro-Bold";
@@ -142,6 +202,8 @@
   }
 
   .hamburger-button {
+    z-index: 10;
+
     width: 18px;
     height: 15px;
     display: none;

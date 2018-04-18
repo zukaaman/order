@@ -4,6 +4,11 @@
 
   background-color: #ecf1f4;
 
+  @include mobile {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
   h1 {
     margin: 0;
     padding: 0;
@@ -15,6 +20,16 @@
     font-size: 70px;
     font-weight: 300;
     line-height: 72px;
+
+    @include tablet {
+      max-width: 60%;
+    }
+
+    @include mobile {
+      max-width: 88%;
+
+      font-size: 50px;
+    }
   }
 
   ul {
@@ -23,6 +38,10 @@
     display: flex;
 
     list-style: none;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   li {

@@ -4,6 +4,10 @@
 
   background-color: #333333;
 
+  @include tablet {
+    padding: 60px 0;
+  }
+
   h2 {
     margin: 0;
     padding: 0;
@@ -23,8 +27,17 @@
 
     list-style: none;
 
+    @include desktop {
+      flex-direction: column;
+    }
+
     li {
       margin-right: 2%;
+
+      @include desktop {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
 
       &:first-child {
 

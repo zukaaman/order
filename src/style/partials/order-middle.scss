@@ -6,11 +6,20 @@
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include desktop {
+      flex-direction: column;
+    }
   }
 
   .order-order {
     flex-basis: 81%;
     margin-right: 20px;
+
+    @include desktop {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
 
     h2 {
       margin: 0;
@@ -62,10 +71,20 @@
     .wrapper {
       display: flex;
       justify-content: space-between;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
 
     .wrapper > select {
       flex-basis: 50%;
+    }
+
+    .wrapper:nth-of-type(2) {
+      @include tablet {
+        margin-bottom: 30px;
+      }
     }
 
     select {
@@ -78,7 +97,7 @@
       background-color: #ffffff;
       background-image: url("../img/arrow-down-black.png");
       background-repeat: no-repeat;
-      background-position: 355px 25px;
+      background-position: 95% 25px;
 
       border-radius: 15px;
 
@@ -93,6 +112,10 @@
 
     select[name="problem"] {
       margin-right: 20px;
+
+      @include mobile {
+        margin-right: 0;
+      }
     }
 
     option {
@@ -137,8 +160,18 @@
     .place-wrapper {
       flex-basis: 50%;
 
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
       select {
         width: 100%;
+
+        @include tablet {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -160,6 +193,10 @@
 
       outline: none;
       box-sizing: border-box;
+
+      @include tablet {
+        margin-right: 0;
+      }
     }
 
     input[type="tel"] {

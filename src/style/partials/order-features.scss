@@ -10,6 +10,11 @@
     justify-content: space-between;
 
     list-style: none;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   li {
@@ -20,6 +25,16 @@
     font-family: "HelveticaNeueCyr-Light", sans-serif;
     font-size: 20px;
     font-weight: 300;
+
+    @include desktop {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
 
     &:nth-of-type(1)::before {
       content: "";
@@ -58,6 +73,12 @@
       background-image: url("../img/order-features-3.png");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    &::before {
+      @include tablet {
+        margin-bottom: 30px;
+      }
     }
   }
 }

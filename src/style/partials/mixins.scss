@@ -6,6 +6,10 @@
   @media (max-width: 900px) { @content; }
 }
 
+@mixin forHamMenu {
+  @media (max-width: 767px) { @content; }
+}
+
 @mixin mobile {
   @media (max-width: 600px) { @content; }
 }

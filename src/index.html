@@ -8,7 +8,57 @@
   </head>
   <body>
 
-    //= template/header.html
+    <header class="header">
+
+      <div class="container">
+
+        <div class="logo-wrapper">
+          <a>
+            <img class="logo" src="img/logo.png" width="159" height="79" alt="#">
+          </a>
+        </div>
+
+        <div class="middle  ham-menu">
+
+          <ul class="address">
+            <li>
+              <a href="mailto:info@e-zakaz.ru">info@e-zakaz.ru</a>
+            </li>
+            <li>
+              <a href="tel:+88002222222">8 (800) 222-22-22</a>
+            </li>
+            <li>
+              <p>Ваш город:
+                <select>
+                  <option value="Кемерово">Кемерово</option>
+                  <option value="Кемерово">Кемерово</option>
+                  <option value="Кемерово">Кемерово</option>
+                </select>
+              </p>
+            </li>
+          </ul>
+
+          <ul class="how-to">
+            <li>
+              <a href="order-card.html">Создать задание</a>
+            </li>
+            <li>
+              <a href="ispolnitel.html">Стать исполнителем</a>
+            </li>
+            <li>
+              <button>Задать вопрос</button>
+            </li>
+          </ul>
+
+        </div>
+
+        <button class="hamburger-button">
+          <img src="img/hamburger.png" width="18" height="15" alt="#">
+        </button>
+
+      </div>
+
+    </header>
 
     <main>
 
@@ -251,6 +301,9 @@
     </main>
 
     //= template/footer.html
+
+    <script src="js/main.min.js"></script>
+    <script src="js/ham-menu.js"></script>
 
   </body>
 </html>

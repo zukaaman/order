@@ -31,3 +31,4 @@ input.addEventListener("blur", mask, false);
 input.addEventListener("keydown", mask, false)
 
 });
+

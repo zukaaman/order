@@ -9,6 +9,14 @@
 
   box-sizing: border-box;
 
+  @include desktop {
+    background-position: 50% 0;
+  }
+
+  @include mobile {
+    background-position: 30% 0;
+  }
+
   h1 {
     margin: 0;
     padding: 0;
@@ -21,6 +29,19 @@
     font-size: 70px;
     font-weight: 300;
     line-height: 72px;
+
+    @include desktop {
+      margin-left: 10%;
+    }
+
+    @include tablet {
+      margin-left: 0;
+      max-width: 70%;
+    }
+
+    @include mobile {
+      max-width: 82%;
+    }
   }
 
   p {
@@ -34,11 +55,33 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
+
+    @include desktop {
+      margin-left: 10%;
+    }
+
+    @include tablet {
+      margin-left: 0;
+    }
   }
 
   .search-wrapper {
     margin-left: 35%;
     margin-bottom: 20px;
+
+    @include desktop {
+      margin-left: 10%;
+    }
+
+    @include tablet {
+      margin-left: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
 
     input {
       height: 57px;
@@ -57,6 +100,15 @@
       background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
 
       box-sizing: border-box;
+
+      @include tablet {
+        flex-grow: 1;
+      }
+
+      @include mobile {
+        margin-bottom: 10px;
+        width: 100%;
+      }
     }
 
     button {

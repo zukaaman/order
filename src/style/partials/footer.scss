@@ -9,13 +9,26 @@
   font-weight: 400;
   line-height: 24px;
 
+  @include mobile {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
   .container {
     display: flex;
     align-items: center;
 
+    @include mobile {
+      justify-content: space-between;
+    }
+
     div {
       margin-right: 8%;
       min-width: 9%;
+
+      // @include mobile {
+      //   min-width: auto;
+      // }
 
       &:last-child {
         margin-right: 0;
@@ -34,6 +47,17 @@
     margin-bottom: 20px;
 
     font-weight: 600;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  li {
+
+    @include mobile {
+      display: none;
+    }
   }
 
   a {

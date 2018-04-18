@@ -6,11 +6,28 @@
 
   background-image: url("../img/index-services-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: top right;
+
+  overflow: hidden;
+
+  @include tablet {
+    height: 991px;
+  }
 
   .layer {
     flex-basis: 50%;
     height: 253px;
+
+    @include tablet {
+      flex-basis: 100%;
+      height: 150px;
+    }
+
+    &:nth-of-type(2) {
+      @include tablet {
+        display: none;
+      }
+    }
   }
 
   .layer:nth-of-type(1) {
@@ -24,6 +41,10 @@
 
     width: 100%;
     height: 253px;
+
+    @include tablet {
+      height: 150px;
+    }
   }
 
   h2 {
@@ -37,6 +58,19 @@
     font-size: 32px;
     font-weight: 300;
     line-height: 44px;
+
+    @include tablet {
+      max-width: 100%;
+      margin-top: 50px;
+
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-top: 40px;
+
+      font-size: 24px;
+    }
   }
 
   .wrapper-2 {
@@ -47,6 +81,17 @@
     width: 100%;
     height: 840px;
 
+    @include tablet {
+      top: 150px;
+    }
+
+    .container {
+      @include desktop {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -54,6 +99,22 @@
       flex-wrap: wrap;
 
       list-style: none;
+    }
+
+    li {
+      flex-basis: 25%;
+
+      @include desktop {
+        flex-basis: 33.33333%;
+      }
+
+      @include tablet {
+        flex-basis: 50%;
+      }
+
+      @include mobile {
+        flex-basis: 100%;
+      }
     }
 
     a {
@@ -67,11 +128,20 @@
 
       border: 1px solid #999999;
       box-sizing: border-box;
+
+      @include desktop {
+        width: auto;
+      }
     }
 
     img {
       width: 295px;
       height: 210px;
+
+      @include desktop {
+        width: 100%;
+        object-fit: cover;
+      }
     }
 
     p {

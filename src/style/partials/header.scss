@@ -24,7 +24,10 @@
   .middle {
     display: flex;
     flex-direction: column;
-    margin-right: 25px;
+
+    @include tablet {
+      display: none;
+    }
 
     li {
       margin-right: 40px;
@@ -33,6 +36,10 @@
         margin-right: 0;
       }
     }
+  }
+
+  .active {
+    display: block;
   }
 
   .address {
@@ -134,8 +141,19 @@
     }
   }
 
-  .hamburger {
+  .hamburger-button {
     width: 18px;
     height: 15px;
+    display: none;
+    padding: 0;
+
+    @include tablet {
+      display: block;
+    }
+
+    img {
+      width: 18px;
+      height: 15px;
+    }
   }
 }

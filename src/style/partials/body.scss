@@ -23,6 +23,11 @@ button {
 .container {
   margin: 0 auto;
   max-width: 1180px;
+
+  @include desktop {
+    max-width: 96%;
+    padding: 0 2%;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

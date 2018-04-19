@@ -79,9 +79,9 @@ gulp.task('js:build', function () {
   gulp.src(path.src.js) //Найдем наш main файл
     .pipe(rigger()) //Прогоним через rigger
     .pipe(sourcemaps.init()) //Инициализируем sourcemap
-    .pipe(uglify()) //Сожмем наш js
-    .pipe(sourcemaps.write()) //Пропишем карты
-    .pipe(rename({suffix: '.min'})) //добавим суффикс .min к выходному файлу
+    //.pipe(uglify()) //Сожмем наш js
+    //.pipe(sourcemaps.write()) //Пропишем карты
+    //.pipe(rename({suffix: '.min'})) //добавим суффикс .min к выходному файлу
     .pipe(gulp.dest(path.build.js)) //выгрузим готовый файл в build
     .pipe(reload({stream: true})); //И перезагрузим сервер
 });
@@ -92,9 +92,9 @@ gulp.task('style:build', function () {
     .pipe(sourcemaps.init()) //инициализируем soucemap
     .pipe(sass()) //Скомпилируем
     .pipe(prefixer()) //Добавим браузерные префиксы
-    .pipe(cleanCSS()) //Сожмем
-    .pipe(sourcemaps.write()) //пропишем sourcemap
-    .pipe(rename({suffix: '.min'})) //добавим суффикс .min к имени выходного файла
+    //.pipe(cleanCSS()) //Сожмем
+    //.pipe(sourcemaps.write()) //пропишем sourcemap
+    //.pipe(rename({suffix: '.min'})) //добавим суффикс .min к имени выходного файла
     .pipe(gulp.dest(path.build.css)) //выгрузим в build
     .pipe(reload({stream: true})); //перезагрузим сервер
 });

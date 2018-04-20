@@ -1,10 +1,12 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 300;
 
   width: 100%;
   padding-top: 30px;
+  height: 100px;
 
   .container {
     display: flex;
@@ -36,6 +38,12 @@
         margin-right: 0;
       }
     }
+
+    a:hover {
+      color: #ffcc00;
+
+      transition: 0.3s;
+    }
   }
 
   .active {
@@ -45,8 +53,8 @@
 
     margin-right: 2%;
     padding-left: 2%;
-    padding-right: 10%;
-    padding-top: 48px;
+    padding-right: 12%;
+    padding-top: 30px;
     display: block;
     width: 100%;
     margin-right: 10px;
@@ -60,32 +68,77 @@
 
     @include mobile {
       padding-top: 15px;
+      height: 260px;
+      padding-right: 2%;
     }
 
+    // .address {
+    //   display: none;
+    // }
+
     .address {
-      display: none;
+
+      @include mobile {
+        flex-wrap: wrap;
+        margin-right: 2%;
+        margin-bottom: 40px;
+      }
+
+      li {
+
+        &:nth-of-type(1),
+        &:nth-of-type(3) {
+
+          @include mobile {
+            flex-basis: 50%;
+            margin-right: 0;
+          }
+        }
+
+        &:nth-of-type(2) {
+
+          @include mobile {
+            flex-basis: 100%;
+            order: 1;
+            margin-top: 5px;
+            margin-right: 0;
+          }
+        }
+
+        &:nth-of-type(3) {
+          text-align: right;
+        }
+
+        a {
+
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+      }
     }
 
     .how-to {
 
       @include mobile {
         flex-direction: column;
+        align-items: flex-start;
       }
 
-      a {
-        text-decoration: none;
-        padding: 16px 30px;
+      // a {
+      //   text-decoration: none;
+      //   padding: 16px 30px;
 
-        color: #ffffff;
-        font-family: "MyriadPro-Bold";
-        font-size: 16px;
-        font-weight: 700;
+      //   color: #ffffff;
+      //   font-family: "MyriadPro-Bold";
+      //   font-size: 16px;
+      //   font-weight: 700;
 
-        box-shadow: 0 11px 16px rgba(14, 20, 32, 0.17);
-        border-radius: 15px;
-        background-color: #ffcc00;
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
-      }
+      //   box-shadow: 0 11px 16px rgba(14, 20, 32, 0.17);
+      //   border-radius: 15px;
+      //   background-color: #ffcc00;
+      //   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+      // }
 
       li {
         @include mobile {
@@ -95,9 +148,9 @@
 
       li:nth-of-type(3) {
 
-        @include forHamMenu {
-          display: none;
-        }
+        // @include forHamMenu {
+        //   display: none;
+        // }
       }
     }
   }
@@ -205,18 +258,27 @@
   .hamburger-button {
     z-index: 10;
 
-    width: 18px;
-    height: 15px;
+    width: 30px;
+    height: 36px;
     display: none;
     padding: 0;
+    margin-right: 15px;
 
     @include tablet {
       display: block;
     }
 
-    img {
-      width: 18px;
-      height: 15px;
+    svg {
+      width: 30px;
+      height: 36px;
+
+      fill: #f9f9f4;
     }
   }
+}
+
+.fixed {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  transition: 0.3s;
 }
